@@ -1,0 +1,231 @@
+.info {
+  margin: 0 auto 40px;
+  padding: 40px;
+  width: 1100px;
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info .left {
+  width: 100px;
+  text-align: center;
+}
+
+.info .left p {
+  font-size: 14px;
+  font-weight: 500;
+  color: #323233;
+  margin-bottom: 7px;
+}
+
+.info .left .time {
+  font-size: 28px;
+  font-weight: 500;
+  color: #323233;
+}
+
+.info .mid {
+  width: 740px;
+}
+
+.info .mid .tp {
+  width: 600px;
+  margin-bottom: 20px;
+}
+
+.info .mid .tp .tab {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888888;
+}
+
+.info .mid .tp .tab a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888888;
+}
+
+.info .mid .tp .tab a:hover {
+  color: #559AEE;
+}
+
+.info .mid .tp h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #333333;
+  padding: 30px 0;
+}
+
+.info .mid .new-info {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 28px;
+  margin-bottom: 40px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.info .mid .related h3 {
+  background: #083f7a;
+  color: #fff;
+  font-size: 16px;
+  width: 104px;
+  height: 34px;
+  text-align: center;
+  line-height: 34px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.info .mid .related a {
+  display: block;
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 20px;
+  height: 120px;
+  vertical-align: middle;
+  padding-bottom: 20px;
+}
+
+.info .mid .related a:hover .title {
+  color: #559AEE;
+}
+
+.info .mid .related a img {
+  width: 220px;
+  height: 120px;
+  float: left;
+  margin-right: 15px;
+}
+
+.info .mid .related a div {
+  width: 430px;
+  line-height: 28px;
+  display: inline-block;
+  height: 100%;
+}
+
+.info .mid .related a div .title {
+  font-size: 16px;
+  font-weight: 400;
+  height: 84px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.info .mid .related a div .time {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888888;
+  margin-bottom: 20px;
+}
+
+.info .mid .related .noimg div {
+  width: 100%;
+}
+
+.info .right {
+  width: 200px;
+}
+
+.info .right .roc {
+  margin-bottom: 20px;
+}
+
+.info .right .roc img {
+  vertical-align: text-bottom;
+}
+
+.info .right .roc p {
+  height: 36px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #323233;
+  line-height: 36px;
+}
+
+.info .right .roc p a {
+  height: 12px;
+  float: right;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0;
+}
+
+.info .right .roc p a:hover {
+  color: #559AEE;
+}
+
+.info .right .roc h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #323233;
+  line-height: 20px;
+  padding: 10px 0;
+}
+
+.info .right .roc .a {
+  font-size: 12px;
+  width: 100%;
+  font-weight: 400;
+  display: inline-block;
+  color: #323233;
+  padding: 5px 0;
+}
+
+.info .right .roc .a:hover {
+  color: #559AEE;
+}
+
+.info .right .roc .a img {
+  width: 80px;
+  height: 50px;
+  float: left;
+  margin-right: 5px;
+}
+
+.info .right .imgs h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #323233;
+  line-height: 20px;
+  padding: 10px 0;
+}
+
+.info .right .imgs div {
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info .right .imgs div .a {
+  font-size: 12px;
+  width: 49%;
+  font-weight: 400;
+  display: inline-block;
+  color: #323233;
+  padding: 5px 0;
+}
+
+.info .right .imgs div .a:hover {
+  color: #559AEE;
+}
+
+.info .right .imgs div .a img {
+  width: 80px;
+  height: 50px;
+  margin-right: 5px;
+}

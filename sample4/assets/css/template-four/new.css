@@ -1,0 +1,165 @@
+.info {
+  margin: 0 auto 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  width: 1100px;
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.info .left {
+  width: 800px;
+}
+
+.info .left .top {
+  width: 600px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.info .left .top .tab {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888888;
+}
+
+.info .left .top .tab a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888888;
+}
+
+.info .left .top h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #333333;
+  padding: 30px 0;
+}
+
+.info .left .top .time {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 30px;
+  color: #888888;
+}
+
+.info .left .new-info {
+  font-size: 16px;
+  padding-top: 50px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.info .left .tag {
+  padding: 20px 0;
+  margin-top: 70px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.info .left .tag span {
+  display: inline-block;
+  text-align: center;
+  width: 52px;
+  height: 20px;
+  line-height: 20px;
+  background: #f9f9f9;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #888888;
+}
+
+.info .left .related h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.info .left .related a {
+  display: block;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.info .left .related a .title {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.info .left .related a .img {
+  border: 0;
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.info .left .related a .img img {
+  width: 240px;
+  height: 140px;
+}
+
+.info .left .related a .time {
+  font-size: 14px;
+  font-weight: 400;
+  color: #888888;
+  margin-bottom: 20px;
+}
+
+.info .right {
+  width: 210px;
+}
+
+.info .right div {
+  margin-bottom: 20px;
+}
+
+.info .right div p {
+  height: 36px;
+  background: #fafafa;
+  font-size: 14px;
+  font-weight: 500;
+  color: #323233;
+  line-height: 36px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.info .right div p a {
+  height: 12px;
+  float: right;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 0;
+}
+
+.info .right div h3 {
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 20px;
+  font-weight: 500;
+  color: #323233;
+  line-height: 20px;
+  padding: 10px 0;
+}
+
+.info .right div .a {
+  border-bottom: 1px solid #e5e5e5;
+  font-size: 14px;
+  width: 100%;
+  font-weight: 400;
+  display: inline-block;
+  color: #323233;
+  padding: 5px 0;
+}

@@ -1,0 +1,190 @@
+.container {
+  width: 100%;
+  min-width: 1200px;
+  height: 680px;
+  background-image: url("../../../imgs/template-three/template-three-news/banner1.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.news {
+  padding-top: 60px;
+  color: #333333;
+}
+
+.news .position {
+  font-size: 14px;
+  line-height: 14px;
+  color: #888888;
+}
+
+.news .article {
+  padding-top: 40px;
+}
+
+.news .article .title {
+  display: inline-block;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 28px;
+  padding-bottom: 30px;
+}
+
+.news .article .time {
+  color: #888888;
+  line-height: 14px;
+  border-bottom: solid 1px #E5E5E5;
+  padding-bottom: 30px;
+}
+
+.news .article .time .data {
+  padding-right: 10px;
+}
+
+.news .article .words {
+  font-size: 16px;
+  line-height: 34px;
+  margin-top: 30px;
+}
+
+.news .article .navs {
+  border-top: solid 1px #E5E5E5;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.news .article .navs .previous {
+  color: #333333;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+}
+
+.news .article .navs .previous .spacing {
+  padding-right: 30px;
+}
+
+.news .article .navs .previous:hover {
+  color: #0474DE;
+}
+
+.news .article .navs .next {
+  margin-top: 38px;
+}
+
+.about-container {
+  width: 100%;
+  min-width: 1200px;
+  height: 143px;
+  padding-top: 40px;
+  background-color: #F9F9FB;
+}
+
+.about-container .about-nav .main-navs .navs-item {
+  float: left;
+  color: #333333;
+  padding: 0 20px;
+}
+
+.about-container .about-nav .main-navs .navs-item:nth-child(1) {
+  padding-left: 0;
+}
+
+.about-container .about-nav .main-navs .navs-item:hover span {
+  color: #147be1;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.about-container .about-nav .Contact {
+  margin-top: 40px;
+}
+
+.about-container .about-nav .Contact .call .num {
+  font-size: 23px;
+  color: #333333;
+  line-height: 43px;
+}
+
+.about-container .about-nav .Contact .call i {
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  background-image: url("../../../imgs/template-three/call.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 13px;
+}
+
+.about-container .about-nav .Contact .email {
+  margin-left: 32px;
+}
+
+.about-container .about-nav .Contact .email .txt {
+  font-size: 23px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 43px;
+}
+
+.about-container .about-nav .Contact .email i {
+  width: 28px;
+  height: 32px;
+  display: inline-block;
+  background-image: url("../../../imgs/template-three/Email.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  margin-right: 13px;
+}
+
+.about-container .about-wx i {
+  display: block;
+  width: 80px;
+  height: 80px;
+  background-color: #D8D8D8;
+  margin-bottom: 4px;
+}
+
+.about-container .about-wx i:hover {
+  opacity: .9;
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.about-container .about-wx .wx {
+  height: 18px;
+  font-size: 13px;
+  font-weight: 400;
+  color: #666666;
+  line-height: 18px;
+}
+
+.footer {
+  width: 100%;
+  min-width: 1200px;
+  background-color: #F9F9FB;
+  height: 70px;
+}
+
+.footer .Copyright {
+  padding-top: 26px;
+  border-top: solid 1px #E5E5E5;
+  color: #999999;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.footer .Copyright .p {
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+
+.footer .Copyright .span {
+  line-height: 18px;
+}

@@ -1,0 +1,180 @@
+a:hover {
+  color: #559AEE;
+}
+
+.message {
+  width: 1100px;
+  margin: 20px auto;
+}
+
+.message .tab {
+  color: #999;
+  margin-bottom: 20px;
+}
+
+.message .content {
+  -webkit-box-shadow: 0px 0px 10px 0px #e6e6e6;
+  box-shadow: 0px 0px 10px 0px #e6e6e6;
+  padding: 30px;
+  margin-bottom: 50px;
+  border-radius: 8px;
+}
+
+.message .content .info {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 25px;
+}
+
+.message .content .info .bottom {
+  font-size: 14px;
+  color: #333333;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+
+.message .content .info .face {
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.message .content .info .face img {
+  float: left;
+  width: 54px;
+  height: 54px;
+  border-radius: 8px;
+  border: 4px solid white;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(8, 63, 122, 0.16);
+  box-shadow: 0px 0px 8px 0px rgba(8, 63, 122, 0.16);
+  margin-right: 10px;
+}
+
+.message .content .info .face div {
+  display: inline-block;
+}
+
+.message .content .info .face div h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+
+.message .content .info .face div p {
+  font-size: 12px;
+  font-weight: 400;
+  color: #999999;
+  line-height: 22px;
+  letter-spacing: 1px;
+}
+
+.message .content .page {
+  font-size: 12px;
+  float: right;
+  text-align: center;
+  display: block;
+}
+
+.message .content .page div {
+  display: inline-block;
+}
+
+.message .content .page div input {
+  margin: 0 3px;
+  display: inline-block;
+  border: 1px solid #ddd;
+  width: 35px;
+  padding-left: 5px;
+  margin: 0;
+  height: 18px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.message .content .page .active {
+  color: #559AEE;
+}
+
+.message .content .page span {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+}
+
+.message .content .page span:hover {
+  color: #559AEE;
+  cursor: pointer;
+}
+
+.message .content .page span img {
+  vertical-align: middle;
+}
+
+.message .content .input {
+  margin-top: 60px;
+}
+
+.message .content .input input {
+  width: 860px;
+  margin: 5px 10px;
+  padding-left: 15px;
+  height: 30px;
+  border-radius: 2px;
+  border: 1px solid #8b96a3;
+}
+
+.message .content .input input:hover {
+  border: 1px solid #559aee;
+}
+
+.message .content .input input:focus {
+  border: 1px solid #559aee;
+}
+
+.message .content .input .text {
+  display: inline-block;
+  width: 60px;
+  text-align: right;
+}
+
+.message .content .input .btn {
+  display: inline-block;
+  width: 80px;
+  height: 34px;
+  color: #fff;
+  text-align: center;
+  line-height: 34px;
+  background: #559aee;
+  border-radius: 2px;
+  transition: transform .5s ease-out,-webkit-transform .5s ease-out;
+}
+
+.message .content .input .btn:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.message .more {
+  width: 200px;
+  height: 42px;
+  border: 1px solid #333333;
+  text-align: center;
+  margin: auto;
+  line-height: 42px;
+}
+
+
+.comment-form-cookies-consent {
+  display: none;
+}
+.form-submit {
+  display: none;
+}
+

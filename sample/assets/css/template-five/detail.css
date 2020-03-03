@@ -1,0 +1,147 @@
+.detail {
+  padding-top: 40px;
+  width: 1100px;
+  margin: 0 auto 40px;
+}
+
+.detail .info {
+  margin-bottom: 35px;
+  /* Safari */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.detail .info .img {
+  margin-right: 20px;
+  width: 500px;
+}
+
+.detail .info .img .gallery-top {
+  width: 400px;
+  height: 400px;
+  margin-bottom: 15px;
+}
+
+.detail .info .img .gallery-top img {
+  width: 400px;
+  height: 400px;
+}
+
+.detail .info .img .gallery-thumbs {
+  height: 110px;
+  margin-bottom: 15px;
+}
+
+.detail .info .img .gallery-thumbs .swiper-wrapper .swiper-slide {
+  height: 102px;
+  border: 1px solid #fff;
+}
+
+.detail .info .img .gallery-thumbs .swiper-wrapper .swiper-slide img {
+  width: 102px;
+  height: 102px;
+}
+
+.detail .info .img .gallery-thumbs .swiper-wrapper .swiper-slide-thumb-active {
+  height: 102px;
+  border: 1px solid #083f7a;
+}
+
+.detail .info .img p {
+  display: -webkit-flex;
+  /* Safari */
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.detail .info .img p span {
+  width: 65px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #888888;
+  border-radius: 15px;
+  border: 1px solid #eeeeee;
+}
+
+.detail .info .img p span:hover {
+  cursor: pointer;
+  background-color: #083f7a;
+  color: #fff;
+}
+
+.detail .info .img p span:focus {
+  outline: 0px solid #000;
+}
+
+.detail .info .content h3 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+.detail .info .content p {
+  width: 640px;
+  line-height: 60px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #083f7a;
+  height: 60px;
+  padding-left: 20px;
+  background: #f7f7f7;
+}
+
+.detail .info .content span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 25px;
+}
+
+.detail .info .content div {
+  width: 160px;
+  height: 42px;
+  background: #083f7a;
+  border-radius: 21px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 42px;
+  font-weight: 400;
+  color: white;
+}
+
+.detail .bottom h3 {
+  height: 35px;
+  line-height: 35px;
+  background: white;
+  border: 1px solid #eeeeee;
+  margin-bottom: 20px;
+}
+
+.detail .bottom h3 span {
+  text-align: center;
+  display: inline-block;
+  width: 80px;
+  border-right: 1px solid #EEEEEE;
+}
+
+.detail .bottom h3 .active {
+  border-top: 3px solid #1E50AE;
+}
+
+.detail .bottom div {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 34px;
+}
