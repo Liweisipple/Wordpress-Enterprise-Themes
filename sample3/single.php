@@ -10,7 +10,7 @@
     } elseif (in_array($category->term_id, $n_array)) {
         include(TEMPLATEPATH . '/single/single-new.php');
     } else {
-        include(TEMPLATEPATH . '/single/single-new.php');
+        include(TEMPLATEPATH . '/single/single-else.php');
     }
 ?>
 
