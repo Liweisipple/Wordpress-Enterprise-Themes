@@ -549,7 +549,7 @@ function get_the_tag_list_div( $before = '', $sep = '', $after = '', $id = 0 ) {
      * @param string $after    String to use after tags.
      * @param int    $id       Post ID.
      */
-    return apply_filters( 'the_tags', get_the_term_list_div( $id, 'post_tag', $before, $sep, $after ), $before, $sep, $after, $id );
+    return get_the_term_list_div( $id, 'post_tag', $before, $sep, $after );
 }
 
 
@@ -571,7 +571,7 @@ function get_the_term_list_div( $id, $taxonomy, $before = '', $sep = '', $after 
         if ( is_wp_error( $link ) ) {
             return $link;
         }
-        $links[] = '<a href="' . esc_url( $link ) . '" rel="tag">' . $term->name . '</a>';
+        $links[] = $term->name;
     }
 
     /**
@@ -584,9 +584,7 @@ function get_the_term_list_div( $id, $taxonomy, $before = '', $sep = '', $after 
      *
      * @param string[] $links An array of term links.
      */
-    $term_links = apply_filters( "term_links-{$taxonomy}", $links );  // phpcs:ignore WordPress.NamingConventions.ValidHookName.UseUnderscores
-
-    return $before . join( $sep, $term_links ) . $after;
+    return $links;
 }
 
 
