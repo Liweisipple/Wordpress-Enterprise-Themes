@@ -4,7 +4,11 @@
 <section class="news">
     <?php $post = get_post($post_ID);?>
     <div class="layout">
-        <h3 class="position" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="300">其他分类 > 正文</h3>
+        <?php
+        $res = get_the_category();
+        $name = $res[0]->name;
+        ?>
+        <h3 class="position" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="300"><?php echo $name; ?> > 正文</h3>
         <div class="article">
             <span class="title single-line" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="300"><?php echo $post->post_title; ?></span>
             <div class="time single-line" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="300">

@@ -8,7 +8,11 @@
     </div>
     <div class="mid">
         <div class="top">
-            <p class="tab"><a href="">其他分类</a>>正文</p>
+            <?php
+            $res = get_the_category();
+            $name = $res[0]->name;
+            ?>
+            <p class="tab"><a href=""><?php echo $name; ?></a>>正文</p>
             <h3><?php echo $post->post_title; ?></h3>
         </div>
         <div class="new-info">
