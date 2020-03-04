@@ -72,7 +72,14 @@ if ($category_slug != 'news' && $category_slug != 'productdetails') {
     $request_o = "SELECT $wpdb->terms.term_id, name, slug FROM $wpdb->terms ";
     $request_o .= " LEFT JOIN $wpdb->term_taxonomy ON $wpdb->term_taxonomy.term_id = $wpdb->terms.term_id  ";
     $request_o .= " WHERE  $wpdb->term_taxonomy.taxonomy = 'category' AND $wpdb->term_taxonomy.count != 0 ";
-    $request_o .= " AND $wpdb->term_taxonomy.term_id = $term_id";
+    if ($p_array != '') {
+        $request_o .= " AND ($wpdb->term_taxonomy.parent not in ($p_array) AND $wpdb->term_taxonomy.term_id not in ($p_array))";
+    }
+    if ($s_array != '') {
+        $request_o .= " AND ($wpdb->term_taxonomy.parent not in ($s_array) AND $wpdb->term_taxonomy.term_id not in ($s_array))";
+    }
+
+    $request_o .= " AND $wpdb->term_taxonomy.term_id in ($term_id)";
     $request_o .= " ORDER BY term_id asc";
     $categorys_o = $wpdb->get_results($request_o);
     foreach ($categorys_o as $category) { //调用菜单
