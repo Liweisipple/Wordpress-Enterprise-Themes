@@ -48,7 +48,10 @@
     </div>
     <div class="right">
         <div>
-            <p>热点新闻<a href="<?php echo get_category_link($category->term_id); ?>">进入新闻频道></a></p>
+            <?php
+            $res = get_category_by_slug('news');
+            ?>
+            <p>热点新闻<a href="<?php echo get_category_link($res->term_id); ?>">进入新闻频道></a></p>
             <h3>新闻标题</h3>
             <?php
             $cate_id = $category->term_id;
