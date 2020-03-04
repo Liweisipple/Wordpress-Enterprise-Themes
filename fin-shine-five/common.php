@@ -103,7 +103,7 @@ if (!empty($wp_n_category)) {
             $output .= "<a href='{$val->guid}'>";
             $output .= "<img src = {$thumbnail_image_url}>";
             $output .= "<h3>$val->post_title</h3>";
-            $output .= "<p>" . mb_substr($val->post_content, 0, 122) . "</p>";
+            $output .= "<p>" . mb_substr($val->post_excerpt, 0, 122) . "</p>";
             $output .= '</a>';
         }
 
@@ -138,7 +138,7 @@ if (!empty($wp_o_category)) {
             $output .= "<a href='{$val->guid}'>";
             $output .= "<img src = {$thumbnail_image_url}>";
             $output .= "<h3>$val->post_title</h3>";
-            $output .= "<p>" . mb_substr($val->post_content, 0, 122) . "</p>";
+            $output .= "<p>" . mb_substr($val->post_excerpt, 0, 122) . "</p>";
             $output .= '</a>';
         }
 
