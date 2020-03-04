@@ -21,22 +21,42 @@
                 ?>
             </div>
             <p class="Contact">
-                <span class="call"><i></i><span class="num">400-400-2555</span></span>
-                <span class="email"><i></i><span class="txt">@某某官方微博</span></span>
+                <span class="call"><i></i><span class="num"><?php echo of_get_option('temp3_infomation_bo_telephone'); ?></span></span>
+                <span class="email"><i></i><span class="txt"><?php echo of_get_option('temp3_infomation_bo_weibo'); ?></span></span>
             </p>
         </div>
         <a href="javascript:;" class="about-wx fr">
             <i></i>
             <span class="wx">
-                XXX微信公众号
+                <?php echo of_get_option('temp3_infomation_wechat'); ?>
             </span>
         </a>
     </div>
 </section>
 <section class="footer pr">
     <div class="Copyright layout clearfix">
-        <p class="p">Copyright © 2007-2019 | XXXXXXXXX限公司 版权所有 | 隐私政策 </p>
-        <span class="span">沪ICP1234556666号-1 | 公网备案12346788899号</span>
+        <?php
+        $output = '';
+        $cooperation_array = [
+            'temp3_bottom_name_1' => 'temp3_bottom_href_1',
+            'temp3_bottom_name_2' => 'temp3_bottom_href_2',
+            'temp3_bottom_name_3' => 'temp3_bottom_href_3',
+            'temp3_bottom_name_4' => 'temp3_bottom_href_4',
+            'temp3_bottom_name_5' => 'temp3_bottom_href_5',
+            'temp3_bottom_name_6' => 'temp3_bottom_href_6',
+            'temp3_bottom_name_7' => 'temp3_bottom_href_7',
+            'temp3_bottom_name_8' => 'temp3_bottom_href_8',
+        ];
+        $output .= '<p class="p">';
+        foreach ($cooperation_array as $key => $val) {
+            $name = of_get_option($key);
+            $href = of_get_option($val);
+            if ($name == false) break;
+            $output .= $name. ' | ';
+        }
+        $output .= '</p>';
+        echo $output;
+        ?>
     </div>
 </section>
 

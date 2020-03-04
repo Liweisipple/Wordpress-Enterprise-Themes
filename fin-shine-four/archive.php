@@ -63,20 +63,16 @@ if ($news_cate) { //新闻
 }
 
 if ($category_slug != 'news' && $category_slug != 'productdetails') {
+    $res = get_the_category();
+    $term_id = null;
+    if ($res) {
+        $term_id = $res[0]->term_id;
+    }
+
     $request_o = "SELECT $wpdb->terms.term_id, name, slug FROM $wpdb->terms ";
     $request_o .= " LEFT JOIN $wpdb->term_taxonomy ON $wpdb->term_taxonomy.term_id = $wpdb->terms.term_id  ";
     $request_o .= " WHERE  $wpdb->term_taxonomy.taxonomy = 'category' AND $wpdb->term_taxonomy.count != 0 ";
-    if ($p_array != '') {
-        $request_o .= " AND ($wpdb->term_taxonomy.parent not in ($p_array) AND $wpdb->term_taxonomy.term_id not in ($p_array))";
-    }
-    if ($s_array != '') {
-        $request_o .= " AND ($wpdb->term_taxonomy.parent not in ($s_array) AND $wpdb->term_taxonomy.term_id not in ($s_array))";
-    }
-    if (get_category_by_slug('allclassification')) {
-        $var = get_category_by_slug('allclassification');
-        $else_array = $var->term_id;
-        $request_o .= " AND ($wpdb->term_taxonomy.parent not in ($else_array) AND $wpdb->term_taxonomy.term_id not in ($else_array))";
-    }
+    $request_o .= " AND $wpdb->term_taxonomy.term_id = $term_id";
     $request_o .= " ORDER BY term_id asc";
     $categorys_o = $wpdb->get_results($request_o);
     foreach ($categorys_o as $category) { //调用菜单

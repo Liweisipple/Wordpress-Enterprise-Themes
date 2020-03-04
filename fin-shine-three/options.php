@@ -246,6 +246,34 @@ function optionsframework_options() {
     );
 
     $options[] = array(
+        'name' => __( '模版3底部电话和微博信息填写', 'theme-textdomain' ),
+        'type' => 'heading'
+    );
+    $options[] = array(
+        'name' => __( '底部电话', 'theme-textdomain' ),        'desc' => __( '底部电话', 'theme-textdomain' ),        'id' => 'temp3_infomation_bo_telephone',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+//    $options[] = array(
+//        'name' => __( '电话logo', 'theme-textdomain' ),        'desc' => __( '商标1logo', 'theme-textdomain' ),        'id' => 'temp3_infomation_bo_telephone_logo',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
+//    );
+    $options[] = array(
+        'name' => __( '底部微博', 'theme-textdomain' ),        'desc' => __( '底部微博', 'theme-textdomain' ),        'id' => 'temp3_infomation_bo_weibo',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+//    $options[] = array(
+//        'name' => __( '底部微博logo', 'theme-textdomain' ),        'desc' => __( '商标1logo', 'theme-textdomain' ),        'id' => 'temp3_infomation_bo_weibo_logo',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
+//    );
+
+    $options[] = array(
+        'name' => __( '模版3底部微信二维码设置', 'theme-textdomain' ),
+        'type' => 'heading'
+    );
+    $options[] = array(
+        'name' => __( '底部微信', 'theme-textdomain' ),        'desc' => __( '底部微信', 'theme-textdomain' ),        'id' => 'temp3_infomation_wechat',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+    $options[] = array(
+        'name' => __( '底部微信logo', 'theme-textdomain' ),        'desc' => __( '底部微信logo', 'theme-textdomain' ),        'id' => 'temp3_infomation_wechat_logo',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
+    );
+
+    $options[] = array(
         'name' => __( '模版3底部右侧信息填写', 'theme-textdomain' ),
         'type' => 'heading'
     );
