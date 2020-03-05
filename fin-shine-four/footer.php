@@ -49,6 +49,8 @@
                             'temp4_bottom_name_6' => 'temp4_bottom_href_6',
                             'temp4_bottom_name_7' => 'temp4_bottom_href_7',
                             'temp4_bottom_name_8' => 'temp4_bottom_href_8',
+                            'temp4_bottom_name_9' => 'temp4_bottom_href_9',
+                            'temp4_bottom_name_10' => 'temp4_bottom_href_10',
                         ];
                         foreach ($cooperation_array as $key => $val) {
                             $name = of_get_option($key);
