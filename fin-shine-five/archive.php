@@ -66,11 +66,7 @@ if ($news_cate) { //新闻
 }
 
 if ($category_slug != 'news' && $category_slug != 'productdetails') {
-    $res = get_the_category();
-    $term_id = null;
-    if ($res) {
-        $term_id = $res[0]->term_id;
-    }
+    $term_id = get_current_category_id();
     $o_array = getchild($term_id);
     $o_array[] = $term_id;
     $o_array = implode(',', $o_array);

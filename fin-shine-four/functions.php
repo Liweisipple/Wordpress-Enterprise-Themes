@@ -1063,3 +1063,8 @@ function getchild($id)
     }
     return $return;
 }
+
+function get_current_category_id() {
+    $current_category = single_cat_title('', false);//获得当前分类目录名称
+    return get_cat_ID($current_category);//获得当前分类目录 ID
+}

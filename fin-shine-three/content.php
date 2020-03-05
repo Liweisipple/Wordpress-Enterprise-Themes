@@ -52,11 +52,11 @@ if ($p_array != '') {
 if ($s_array != '') {
     $request_o .= " AND ($wpdb->term_taxonomy.parent not in ($s_array) AND $wpdb->term_taxonomy.term_id not in ($s_array))";
 }
-if (get_category_by_slug('allclassification')) {
-    $var = get_category_by_slug('allclassification');
-    $else_array = $var->term_id;
-    $request_o .= " AND ($wpdb->term_taxonomy.parent not in ($else_array) AND $wpdb->term_taxonomy.term_id not in ($else_array))";
-}
+//if (get_category_by_slug('allclassification')) {
+//    $var = get_category_by_slug('allclassification');
+//    $else_array = $var->term_id;
+//    $request_o .= " AND ($wpdb->term_taxonomy.parent not in ($else_array) AND $wpdb->term_taxonomy.term_id not in ($else_array))";
+//}
 $request_o .= " ORDER BY term_id asc";
 $categorys_o = $wpdb->get_results($request_o);
 foreach ($categorys_o as $category) { //调用菜单
