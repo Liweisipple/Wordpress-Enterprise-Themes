@@ -404,7 +404,7 @@ if ( ! function_exists( 'fenikso_comment' ) ) :
                         <div class="face">
                             <img src="<?php echo get_template_directory_uri()  . '/assets/imgs/template-five/avatar.png'; ?>" alt="">
                             <div>
-                                <h3><?php printf( '%1$s %2$s', get_comment_author_link(), ( $comment->user_id === $post->post_author ) ? '<span class="label label-info"> ' . __( 'Post author', 'fenikso' ) . '</span>' : ''); ?></h3>
+                                <h3><?php printf( '%1$s %2$s', get_comment_author_link(), ( $comment->user_id === $post->post_author ) ? '<span class="label label-info"></span>' : ''); ?></h3>
                                 <p>身份信息</p>
                             </div>
 
