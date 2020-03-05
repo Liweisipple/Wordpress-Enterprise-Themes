@@ -9,7 +9,7 @@
             <span class="title single-line" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="300"><?php echo $post->post_title; ?></span>
             <div class="time single-line" data-aos="fade-right" data-aos-easing="ease" data-aos-delay="300">
                 <span class="data"><?php echo $post->post_date ?></span>
-                <span>13：00</span>
+<!--                <span>13：00</span>-->
             </div>
             <div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300">
                 <p class="words"><?php echo $post->post_content; ?> </p>
