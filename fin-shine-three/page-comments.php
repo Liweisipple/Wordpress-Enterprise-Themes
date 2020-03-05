@@ -9,7 +9,11 @@ foreach ($comments as $val) {
     ];
 }
 $per_page = get_option('comments_per_page');
-$round = round(count($p_array) / $per_page);
+if (count($p_array) == 1 || count($p_array) == 2) {
+    $round = 1;
+} else {
+    $round = round(count($p_array) / $per_page);
+}
 $output = '';
 ?>
 
@@ -77,7 +81,7 @@ $output = '';
             ;margin: 0 0 0 0;" type="submit" id="submit" value="留言"></button></div>';
             }
             ?>
-            <?php comment_form($comment_form_args); ?>
+            <?php comment_form_div($comment_form_args); ?>
         </div>
     </div>
 

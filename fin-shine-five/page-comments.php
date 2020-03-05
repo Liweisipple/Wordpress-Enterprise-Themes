@@ -37,7 +37,7 @@
 ;margin: 0 0 0 0;" name="submit" type="submit" id="submit" class="submit" value="发布"></span></div>';
                 }
                 ?>
-                <?php comment_form($comment_form_args); ?>
+                <?php comment_form_div($comment_form_args); ?>
             </div>
         </div>
         </section>
