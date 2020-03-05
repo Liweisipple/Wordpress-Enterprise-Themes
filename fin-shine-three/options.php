@@ -41,10 +41,10 @@ function optionsframework_options() {
         'type' => 'heading'
     );
     $options[] = array(
-        'name' => __( '首页顶部视频标题', 'theme-textdomain' ),        'desc' => __( '首页顶部图片标题', 'theme-textdomain' ),        'id' => 'tp3_top_img_title',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+        'name' => __( '首页顶部视频标题', 'theme-textdomain' ),        'desc' => __( '首页顶部视频标题', 'theme-textdomain' ),        'id' => 'tp3_top_img_title',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
     );
     $options[] = array(
-        'name' => __( '首页顶部视频链接', 'theme-textdomain' ),        'desc' => __( '首页顶部图片', 'theme-textdomain' ),        'id' => 'tp3_top_img_url',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
+        'name' => __( '首页顶部视频链接', 'theme-textdomain' ),        'desc' => __( '首页顶部视频链接', 'theme-textdomain' ),        'id' => 'tp3_top_img_url',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
     );
 
     
