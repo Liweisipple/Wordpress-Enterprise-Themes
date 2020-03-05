@@ -89,3 +89,7 @@ a {
 .top-nav .sgin-btn:hover {
   opacity: 0.7;
 }
+
+.form-submit {
+  display: none;
+}

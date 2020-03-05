@@ -195,7 +195,7 @@ if (!empty($wp_o_category)) {
         $myqueryargs = array(
             'order'          => 'DESC',
             'category__in'   => array($cat_id),
-            'posts_per_page' => 4
+            'posts_per_page' => 2
         );
         $myquery = new WP_Query($myqueryargs);
         $output .= '<section class="roducts" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300">';
