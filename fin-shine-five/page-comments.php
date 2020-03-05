@@ -9,10 +9,10 @@
                 <!-- 满足两个条件，评论个数大于一个且设置了分页数量 -->
                 <div class="page">
                     <div class="page">
-                        <a href = "<?php echo get_previous_comments_link_div('上一页') ?>"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/template-four/detail/arrow_left.png" alt=""></span></a>
+                        <a href = "<?php echo get_previous_comments_link_div('上一页') ?>"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/arrow_left.png" alt=""></span></a>
                         <div><input id="href_page_value" type="text" value=""> / <?php echo get_comment_pages_count(); ?></div>
                         <span id="href_page">GO</span>
-                        <a href = "<?php echo get_next_comments_link_div('下一页') ?>"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/template-four/detail/arrow_right.png" alt=""></span></a>
+                        <a href = "<?php echo get_next_comments_link_div('下一页') ?>"><span><img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/arrow_right.png" alt=""></span></a>
                     </div>
                 </div>
             <?php endif; ?>

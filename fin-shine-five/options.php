@@ -263,6 +263,36 @@ function optionsframework_options() {
     $options[] = array(
         'name' => __( '链接10地址', 'theme-textdomain' ),        'desc' => __( '链接10地址', 'theme-textdomain' ),        'id' => 'tp5_bottom_href_10',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'text'
     );
+    $options[] = array(
+        'name' => __( '链接11名称', 'theme-textdomain' ),        'desc' => __( '链接11名称', 'theme-textdomain' ),        'id' => 'tp5_bottom_name_11',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+    $options[] = array(
+        'name' => __( '链接11地址', 'theme-textdomain' ),        'desc' => __( '链接11地址', 'theme-textdomain' ),        'id' => 'tp5_bottom_href_11',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'text'
+    );
+    $options[] = array(
+        'name' => __( '链接12名称', 'theme-textdomain' ),        'desc' => __( '链接12名称', 'theme-textdomain' ),        'id' => 'tp5_bottom_name_12',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+    $options[] = array(
+        'name' => __( '链接12地址', 'theme-textdomain' ),        'desc' => __( '链接12地址', 'theme-textdomain' ),        'id' => 'tp5_bottom_href_12',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'text'
+    );
+    $options[] = array(
+        'name' => __( '链接13名称', 'theme-textdomain' ),        'desc' => __( '链接13名称', 'theme-textdomain' ),        'id' => 'tp5_bottom_name_13',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+    $options[] = array(
+        'name' => __( '链接13地址', 'theme-textdomain' ),        'desc' => __( '链接13地址', 'theme-textdomain' ),        'id' => 'tp5_bottom_href_13',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'text'
+    );
+    $options[] = array(
+        'name' => __( '链接14名称', 'theme-textdomain' ),        'desc' => __( '链接14名称', 'theme-textdomain' ),        'id' => 'tp5_bottom_name_14',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+    $options[] = array(
+        'name' => __( '链接14地址', 'theme-textdomain' ),        'desc' => __( '链接14地址', 'theme-textdomain' ),        'id' => 'tp5_bottom_href_14',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'text'
+    );
+    $options[] = array(
+        'name' => __( '链接15名称', 'theme-textdomain' ),        'desc' => __( '链接15名称', 'theme-textdomain' ),        'id' => 'tp5_bottom_name_15',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+    $options[] = array(
+        'name' => __( '链接15地址', 'theme-textdomain' ),        'desc' => __( '链接15地址', 'theme-textdomain' ),        'id' => 'tp5_bottom_href_15',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'text'
+    );
 
 	return $options;
 }

@@ -59,17 +59,23 @@
     $cooperation_array = [
         'tp5_bottom_name_9' => 'tp5_bottom_href_9',
         'tp5_bottom_name_10' => 'tp5_bottom_href_10',
+        'tp5_bottom_name_11' => 'tp5_bottom_href_11',
+        'tp5_bottom_name_12' => 'tp5_bottom_href_12',
+        'tp5_bottom_name_13' => 'tp5_bottom_href_13',
+        'tp5_bottom_name_14' => 'tp5_bottom_href_14',
+        'tp5_bottom_name_15' => 'tp5_bottom_href_15',
     ];
     $output .= '<p>';
     $i = 0;
     foreach ($cooperation_array as $key => $val) {
         $name = of_get_option($key);
+        if ($name == '') break;
         if ($i == 0) {
             $output .= $name;
         } else {
             $output .= ' | ' . $name;
         }
-
+        $i++;
     }
     $output .= '</p>';
     echo $output;
