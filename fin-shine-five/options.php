@@ -39,6 +39,9 @@ function optionsframework_options() {
     $options[] = array(
         'name' => __( '模版5首页顶部电话号码', 'theme-textdomain' ),        'desc' => __( '模版5首页顶部电话号码', 'theme-textdomain' ),        'id' => 'tp5_top_img_fix_phone',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
     );
+    $options[] = array(
+        'name' => __( '模版5首页顶部电话号码logo', 'theme-textdomain' ),        'desc' => __( '模版5首页顶部电话号码logo', 'theme-textdomain' ),        'id' => 'tp5_top_img_fix_phone_logo',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
+    );
 
     $options[] = array(
         'name' => __( '模版5首页顶部logo设置', 'theme-textdomain' ),

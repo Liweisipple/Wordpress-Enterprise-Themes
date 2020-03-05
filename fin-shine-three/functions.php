@@ -1232,3 +1232,18 @@ function comment_form_div( $args = array(), $post_id = null ) {
      */
     do_action( 'comment_form_after' );
 }
+
+function getchild($id)
+{
+    $result = explode('/',get_category_children($id));
+    $childs = array();
+    $return  = [];
+    foreach($result as $i)
+    {
+        if(!empty($i))$childs[] = get_category($i);
+    }
+    foreach ($childs as $val) {
+        $return[] = $val->term_id;
+    }
+    return $return;
+}

@@ -61,7 +61,7 @@
             ?>
         </div>
         <div class="fr">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/template-five/img3.png" alt="">
+            <img src="<?php echo of_get_option('tp5_top_img_fix_phone_logo') ?>" alt="">
             <?php echo of_get_option('tp5_top_img_fix_phone'); ?>
         </div>
     </div>

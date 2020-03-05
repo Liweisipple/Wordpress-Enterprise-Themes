@@ -23,12 +23,14 @@ $s_array = '';
 $product_detail_cate = get_category_by_slug('productdetails');//获取商品详情
 $news_cate = get_category_by_slug('news');//获取商品详情
 if ($product_detail_cate) { //商品详情
-    $p_array = $product_detail_cate->term_id;
+    $p_array = getchild($product_detail_cate->term_id);
+    $p_array[] = $product_detail_cate->term_id;
+    $p_array = implode(',', $p_array);
     if ($category_slug == 'allclassification' || $category_slug == 'productdetails') {
         //查询产品
         $request = "SELECT $wpdb->terms.term_id, name,slug,$wpdb->term_taxonomy.description FROM $wpdb->terms ";
         $request .= " LEFT JOIN $wpdb->term_taxonomy ON $wpdb->term_taxonomy.term_id = $wpdb->terms.term_id ";
-        $request .= " WHERE $wpdb->term_taxonomy.taxonomy = 'category' AND $wpdb->term_taxonomy.count != 0 AND ($wpdb->term_taxonomy.parent in ($p_array) OR $wpdb->term_taxonomy.term_id in ($p_array))";
+        $request .= " WHERE $wpdb->term_taxonomy.taxonomy = 'category' AND $wpdb->term_taxonomy.count != 0 AND ($wpdb->term_taxonomy.term_id in ($p_array))";
         $request .= " ORDER BY term_id asc";
         $categorys = $wpdb->get_results($request);
         foreach ($categorys as $category) { //调用菜单
@@ -42,12 +44,14 @@ if ($product_detail_cate) { //商品详情
     }
 }
 if ($news_cate) { //新闻
-    $s_array = $news_cate->term_id;
+    $s_array = getchild($news_cate->term_id);
+    $s_array[] = $news_cate->term_id;
+    $s_array = implode(',', $s_array);
     if ($category_slug == 'allclassification' || $category_slug == 'news') {
         //查询新闻
         $request_n = "SELECT $wpdb->terms.term_id, name, slug FROM $wpdb->terms ";
         $request_n .= " LEFT JOIN $wpdb->term_taxonomy ON $wpdb->term_taxonomy.term_id = $wpdb->terms.term_id  ";
-        $request_n .= " WHERE  $wpdb->term_taxonomy.taxonomy = 'category' AND $wpdb->term_taxonomy.count != 0 AND ($wpdb->term_taxonomy.parent in ($s_array) OR $wpdb->term_taxonomy.term_id in ($s_array))";
+        $request_n .= " WHERE  $wpdb->term_taxonomy.taxonomy = 'category' AND $wpdb->term_taxonomy.count != 0 AND ($wpdb->term_taxonomy.term_id in ($s_array))";
         $request_n .= " ORDER BY term_id asc";
         $categorys_n = $wpdb->get_results($request_n);
         foreach ($categorys_n as $category) { //调用菜单
