@@ -958,3 +958,64 @@ function getchild($id)
     }
     return $return;
 }
+
+function get_the_tag_list_div( $before = '', $sep = '', $after = '', $id = 0 ) {
+
+    /**
+     * Filters the tags list for a given post.
+     *
+     * @since 2.3.0
+     *
+     * @param string $tag_list List of tags.
+     * @param string $before   String to use before tags.
+     * @param string $sep      String to use between the tags.
+     * @param string $after    String to use after tags.
+     * @param int    $id       Post ID.
+     */
+    return get_the_term_list_div( $id, 'post_tag', $before, $sep, $after );
+}
+
+
+function get_the_term_list_div( $id, $taxonomy, $before = '', $sep = '', $after = '' ) {
+    $terms = get_the_terms( $id, $taxonomy );
+
+    if ( is_wp_error( $terms ) ) {
+        return $terms;
+    }
+
+    if ( empty( $terms ) ) {
+        return false;
+    }
+
+    $links = array();
+
+    foreach ( $terms as $term ) {
+        $link = get_term_link( $term, $taxonomy );
+        if ( is_wp_error( $link ) ) {
+            return $link;
+        }
+        $links[] = $term->name;
+    }
+
+    return $links;
+}
+
+
+function is_phone($phonenumber) {
+    if(preg_match("/^1[34578]{1}\d{9}$/",$phonenumber)){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+function moveZeroEnd($arr){
+    if (empty($arr)) return false;
+    for ($i = 0; $i < count($arr) ; $i++) {
+        if (is_phone($arr[$i])) {
+            array_push($arr, $arr[$i]);//把为0的值追加到末尾
+            unset($arr[$i]);
+        }
+    }
+    return $arr;
+}

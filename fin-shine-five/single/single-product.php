@@ -14,8 +14,24 @@
                 </div>
             </div>
         </div>
-        <div class="content">
-            <?php echo $post->post_title; ?>
+        <div class="new-info">
+            <h3><?php echo $post->post_title; ?></h3>
+            <?php
+            if(get_the_tag_list()) {
+                $tag_arr = get_the_tag_list_div();
+                $tag_arr = moveZeroEnd($tag_arr);
+                foreach ($tag_arr as $val) {
+                    if (strpos($val, '¥') === 0) {
+                        echo '<p>'. $val .'</p>';
+                    } elseif (is_phone($val)) {
+                        echo '<div class="btn"><img src="../../assets/imgs/template-five/detail/phone.png" alt="">'. $val .'</div>';
+                    } else {
+                        echo '<span>' . $val . '</span>';
+                    }
+                }
+            }
+            ?>
+
             <?php echo $post->post_content; ?>
         </div>
     </div>

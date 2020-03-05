@@ -401,6 +401,9 @@
   color: #333333;
   line-height: 28px;
   padding-bottom: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .roducts .content a .line {

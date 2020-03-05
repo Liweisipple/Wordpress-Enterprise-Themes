@@ -47,8 +47,7 @@
     </div>
     <div class="right">
         <div class="roc">
-            <p>相关推荐</p>
-            <h3>新闻标题</h3>
+            <h3>相关推荐</h3>
             <?php
                 $cate_id = $category->term_id;
                 $request = "SELECT object_id FROM $wpdb->term_relationships ";
