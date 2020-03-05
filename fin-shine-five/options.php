@@ -32,6 +32,21 @@ function optionsframework_options() {
     $options[] = array(
         'name' => __( '首页顶部图片', 'theme-textdomain' ),        'desc' => __( '首页顶部图片', 'theme-textdomain' ),        'id' => 'tp5_top_img_url',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
     );
+    $options[] = array(
+        'name' => __( '模版5首页顶部电话设置', 'theme-textdomain' ),
+        'type' => 'heading'
+    );
+    $options[] = array(
+        'name' => __( '模版5首页顶部电话号码', 'theme-textdomain' ),        'desc' => __( '模版5首页顶部电话号码', 'theme-textdomain' ),        'id' => 'tp5_top_img_fix_phone',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+
+    $options[] = array(
+        'name' => __( '模版5首页顶部logo设置', 'theme-textdomain' ),
+        'type' => 'heading'
+    );
+    $options[] = array(
+        'name' => __( '模版5首页顶部logo', 'theme-textdomain' ),        'desc' => __( '模版5首页顶部logo', 'theme-textdomain' ),        'id' => 'tp5_top_logo_img_url',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
+    );
 
     $options[] = array(
         'name' => __( '模版5首页中间图片设置', 'theme-textdomain' ),
@@ -78,31 +93,61 @@ function optionsframework_options() {
         'name' => __( '合作客户logo1', 'theme-textdomain' ),        'desc' => __( '合作客户logo1', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_img_1',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
     );
     $options[] = array(
+        'name' => __( '合作客户链接1', 'theme-textdomain' ),        'desc' => __( '合作客户链接1', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_href1',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+    $options[] = array(
         'name' => __( '合作客户logo2', 'theme-textdomain' ),        'desc' => __( '合作客户logo2', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_img_2',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
+    );
+    $options[] = array(
+        'name' => __( '合作客户链接2', 'theme-textdomain' ),        'desc' => __( '合作客户链接2', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_href2',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
     );
     $options[] = array(
         'name' => __( '合作客户logo3', 'theme-textdomain' ),        'desc' => __( '合作客户logo3', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_img_3',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
     );
     $options[] = array(
+        'name' => __( '合作客户链接3', 'theme-textdomain' ),        'desc' => __( '合作客户链接3', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_href3',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+    $options[] = array(
         'name' => __( '合作客户logo4', 'theme-textdomain' ),        'desc' => __( '合作客户logo4', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_img_4',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
+    );
+    $options[] = array(
+        'name' => __( '合作客户链接4', 'theme-textdomain' ),        'desc' => __( '合作客户链接4', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_href4',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
     );
     $options[] = array(
         'name' => __( '合作客户logo5', 'theme-textdomain' ),        'desc' => __( '合作客户logo5', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_img_5',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
     );
     $options[] = array(
+        'name' => __( '合作客户链接5', 'theme-textdomain' ),        'desc' => __( '合作客户链接5', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_href5',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+    $options[] = array(
         'name' => __( '合作客户logo6', 'theme-textdomain' ),        'desc' => __( '合作客户logo6', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_img_6',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
+    );
+    $options[] = array(
+        'name' => __( '合作客户链接6', 'theme-textdomain' ),        'desc' => __( '合作客户链接6', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_href6',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
     );
     $options[] = array(
         'name' => __( '合作客户logo7', 'theme-textdomain' ),        'desc' => __( '合作客户logo7', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_img_7',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
     );
     $options[] = array(
+        'name' => __( '合作客户链接7', 'theme-textdomain' ),        'desc' => __( '合作客户链接7', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_href7',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+    $options[] = array(
         'name' => __( '合作客户logo8', 'theme-textdomain' ),        'desc' => __( '合作客户logo8', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_img_8',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
+    );
+    $options[] = array(
+        'name' => __( '合作客户链接8', 'theme-textdomain' ),        'desc' => __( '合作客户链接8', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_href8',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
     );
     $options[] = array(
         'name' => __( '合作客户logo9', 'theme-textdomain' ),        'desc' => __( '合作客户logo9', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_img_9',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
     );
     $options[] = array(
+        'name' => __( '合作客户链接9', 'theme-textdomain' ),        'desc' => __( '合作客户链接9', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_href9',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+    $options[] = array(
         'name' => __( '合作客户logo10', 'theme-textdomain' ),        'desc' => __( '合作客户logo10', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_img_10',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
+    );
+    $options[] = array(
+        'name' => __( '合作客户链接10', 'theme-textdomain' ),        'desc' => __( '合作客户链接10', 'theme-textdomain' ),        'id' => 'tp5_cooperative_client_href10',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
     );
 
 

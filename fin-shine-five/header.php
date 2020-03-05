@@ -25,7 +25,7 @@
 <section class="top-nav">
     <div class="layout clearfix">
         <a href="javascript:;" class="logo-wrap">
-            <span class="logo">logo</span>
+            <span class="logo" style="background-image: url(<?php echo of_get_option('tp5_top_logo_img_url'); ?>)"></span>
         </a>
         <div class="main-navs">
             <?php
@@ -62,7 +62,7 @@
         </div>
         <div class="fr">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/imgs/template-five/img3.png" alt="">
-            400-400-2555
+            <?php echo of_get_option('tp5_top_img_fix_phone'); ?>
         </div>
     </div>
 </section>

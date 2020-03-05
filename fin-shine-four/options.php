@@ -87,10 +87,16 @@ function optionsframework_options() {
         'name' => __( '合作客户logo1', 'theme-textdomain' ),        'desc' => __( '合作客户logo1', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_img_1',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
     );
     $options[] = array(
+        'name' => __( '合作客户链接1', 'theme-textdomain' ),        'desc' => __( '合作客户链接1', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_href1',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+    $options[] = array(
         'name' => __( '合作客户名称1', 'theme-textdomain' ),        'desc' => __( '合作客户名称1', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_name1',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
     );
     $options[] = array(
         'name' => __( '合作客户logo2', 'theme-textdomain' ),        'desc' => __( '合作客户logo2', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_img_2',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
+    );
+    $options[] = array(
+        'name' => __( '合作客户链接2', 'theme-textdomain' ),        'desc' => __( '合作客户链接2', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_href2',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
     );
     $options[] = array(
         'name' => __( '合作客户名称2', 'theme-textdomain' ),        'desc' => __( '合作客户名称2', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_name2',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
@@ -99,10 +105,16 @@ function optionsframework_options() {
         'name' => __( '合作客户logo3', 'theme-textdomain' ),        'desc' => __( '合作客户logo3', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_img_3',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
     );
     $options[] = array(
+        'name' => __( '合作客户链接3', 'theme-textdomain' ),        'desc' => __( '合作客户链接3', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_href3',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+    $options[] = array(
         'name' => __( '合作客户名称3', 'theme-textdomain' ),        'desc' => __( '合作客户名称3', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_name3',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
     );
     $options[] = array(
         'name' => __( '合作客户logo4', 'theme-textdomain' ),        'desc' => __( '合作客户logo4', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_img_4',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
+    );
+    $options[] = array(
+        'name' => __( '合作客户链接4', 'theme-textdomain' ),        'desc' => __( '合作客户链接4', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_href4',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
     );
     $options[] = array(
         'name' => __( '合作客户名称4', 'theme-textdomain' ),        'desc' => __( '合作客户名称', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_name4',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
@@ -111,10 +123,16 @@ function optionsframework_options() {
         'name' => __( '合作客户logo5', 'theme-textdomain' ),        'desc' => __( '合作客户logo5', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_img_5',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
     );
     $options[] = array(
+        'name' => __( '合作客户链接5', 'theme-textdomain' ),        'desc' => __( '合作客户链接5', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_href5',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+    $options[] = array(
         'name' => __( '合作客户名称5', 'theme-textdomain' ),        'desc' => __( '合作客户名称5', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_name5',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
     );
     $options[] = array(
         'name' => __( '合作客户logo6', 'theme-textdomain' ),        'desc' => __( '合作客户logo6', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_img_6',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
+    );
+    $options[] = array(
+        'name' => __( '合作客户链接6', 'theme-textdomain' ),        'desc' => __( '合作客户链接6', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_href6',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
     );
     $options[] = array(
         'name' => __( '合作客户名称6', 'theme-textdomain' ),        'desc' => __( '合作客户名称6', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_name6',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
@@ -123,10 +141,16 @@ function optionsframework_options() {
         'name' => __( '合作客户logo7', 'theme-textdomain' ),        'desc' => __( '合作客户logo7', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_img_7',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
     );
     $options[] = array(
+        'name' => __( '合作客户链接7', 'theme-textdomain' ),        'desc' => __( '合作客户链接7', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_href7',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+    $options[] = array(
         'name' => __( '合作客户名称7', 'theme-textdomain' ),        'desc' => __( '合作客户名称7', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_name7',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
     );
     $options[] = array(
         'name' => __( '合作客户logo8', 'theme-textdomain' ),        'desc' => __( '合作客户logo8', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_img_8',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
+    );
+    $options[] = array(
+        'name' => __( '合作客户链接8', 'theme-textdomain' ),        'desc' => __( '合作客户链接8', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_href8',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
     );
     $options[] = array(
         'name' => __( '合作客户名称8', 'theme-textdomain' ),        'desc' => __( '合作客户名称8', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_name8',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
@@ -135,10 +159,16 @@ function optionsframework_options() {
         'name' => __( '合作客户logo9', 'theme-textdomain' ),        'desc' => __( '合作客户logo9', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_img_9',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
     );
     $options[] = array(
+        'name' => __( '合作客户链接9', 'theme-textdomain' ),        'desc' => __( '合作客户链接9', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_href9',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
+    );
+    $options[] = array(
         'name' => __( '合作客户名称9', 'theme-textdomain' ),        'desc' => __( '合作客户名称9', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_name9',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
     );
     $options[] = array(
         'name' => __( '合作客户logo10', 'theme-textdomain' ),        'desc' => __( '合作客户logo10', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_img_10',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
+    );
+    $options[] = array(
+        'name' => __( '合作客户链接10', 'theme-textdomain' ),        'desc' => __( '合作客户链接10', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_href10',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'
     );
     $options[] = array(
         'name' => __( '合作客户名称10', 'theme-textdomain' ),        'desc' => __( '合作客户名称10', 'theme-textdomain' ),        'id' => 'temp4_cooperative_client_name10',        'placeholder' => '',        'std' => '',        'class' => 'mini',        'type' => 'text'

@@ -123,10 +123,13 @@ $cooperation_array = [
 $output .= '<section class="choose" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300">';
 $output .= '<h2>' . of_get_option('temp4_cooperative_client') . '</h2>';
 $output .= '<div class="content">';
+$i = 1;
 foreach ($cooperation_array as $key =>  $val) {
     $img = of_get_option($val);
+    $key_herf = 'temp4_cooperative_client_href' . $i;
+    $href = of_get_option($key_herf);
     if ($img != '') {
-        $output .= '<a>';
+        $output .= "<a href='$href'>";
         $output .= "<img src='{$img}' alt=''>";
         $output .= '<h3>';
         $output .= of_get_option($key);
@@ -135,6 +138,7 @@ foreach ($cooperation_array as $key =>  $val) {
     } else {
         break;
     }
+    $i++;
 }
 $output .= '</div>';
 $output .= '</section>';

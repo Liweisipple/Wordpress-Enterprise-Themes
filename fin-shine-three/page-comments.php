@@ -32,7 +32,8 @@ $output = '';
                         foreach ($p_array as $key => $val) {
                             if ($co == $per_page) break;
                             $output .= '<div class="item">';
-                            $output .= '<img src="../../assets/imgs/template-three/template-three-we/car2.png"/>';
+                            $href = get_template_directory_uri()  . '/assets/imgs/template-three/avatar.png';
+                            $output .= "<img src='$href'/>";
                             $output .= '<span class="name single-line">' . $val['name'] . '</span>';
                             $output .= '<p class="multi-line">' . $val['content'] . '</p>';
                             $output .= '</div>';

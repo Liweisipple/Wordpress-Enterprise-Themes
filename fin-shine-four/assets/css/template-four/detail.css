@@ -4,7 +4,7 @@
   background: white;
   line-height: 50px;
   -webkit-box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1);
 }
 
 .tag h3 {
@@ -16,8 +16,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .tag h3 .active {
@@ -45,14 +45,14 @@
 
 .info-one .one {
   display: inline-block;
-  width: 600px;
+  width: 550px;
   vertical-align: middle;
   height: 450px;
 }
 
 .info-one .one img {
   height: 450px;
-  width: 600px;
+  width: 550px;
 }
 
 .info-one .swiper-container {
@@ -62,8 +62,13 @@
 
 .info-one .left {
   display: inline-block;
-  width: 40%;
-  margin-right: 5%;
+  width: 500px;
+  margin-right: 40px;
+  vertical-align: middle;
+}
+
+.info-one .left img {
+  max-width: 500px;
 }
 
 .info-one .left h3 {
@@ -142,8 +147,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .info-three div span {
@@ -163,6 +168,11 @@
 .info-three div span .small {
   width: 355px;
   height: 140px;
+}
+
+.info-four {
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .info-four div {

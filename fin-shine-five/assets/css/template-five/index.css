@@ -26,8 +26,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hot .content div {
@@ -39,13 +39,13 @@
 .hot .content div:hover {
   border: 1px solid #d3082f;
   -webkit-transition-duration: 1s;
-  transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .hot .content div:hover .btn {
   border: 1px solid #d3082f;
   -webkit-transition-duration: 1s;
-  transition-duration: 1s;
+          transition-duration: 1s;
   color: #d3082f;
 }
 
@@ -133,8 +133,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .car .content .right div:last-child {
@@ -168,14 +168,14 @@
 .car .content .right div a:hover {
   border: 1px solid #d3082f;
   -webkit-transition-duration: 1s;
-  transition-duration: 1s;
+          transition-duration: 1s;
   z-index: 10;
 }
 
 .car .content .right div a:hover .btn {
   border: 1px solid #d3082f;
   -webkit-transition-duration: 1s;
-  transition-duration: 1s;
+          transition-duration: 1s;
   color: #d3082f;
 }
 
@@ -224,6 +224,8 @@
   width: 1000px;
   margin: 50px auto;
   height: 310px;
+  background-size: cover;
+  background-repeat: no-repeat;
   color: #fff;
   text-shadow: 0 1px black, 1px 0 black, -1px 0 black, 0 -1px black;
 }
@@ -272,10 +274,10 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .new .content a {
@@ -290,7 +292,7 @@
 .new .content a:hover {
   border: 1px solid #d3082f;
   -webkit-transition-duration: 1s;
-  transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .new .content a img {
@@ -364,10 +366,10 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .customer .content a {
@@ -382,7 +384,7 @@
 .customer .content a:hover {
   border: 1px solid #d3082f;
   -webkit-transition-duration: 1s;
-  transition-duration: 1s;
+          transition-duration: 1s;
 }
 
 .customer .content a img {

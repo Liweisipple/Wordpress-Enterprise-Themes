@@ -15,7 +15,6 @@
 .container .Videos .video-img {
   width: 80px;
   height: 80px;
-  background: url("../../imgs/template-three/play.png") no-repeat;
   background-size: cover;
   cursor: pointer;
 }
@@ -38,7 +37,6 @@
   width: 100%;
   min-width: 1200px;
   height: 630px;
-  background-image: url("../../imgs/template-three/car.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -75,7 +73,6 @@
   width: 100%;
   min-width: 1200px;
   height: 630px;
-  background-image: url("../../imgs/template-three/car2.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -113,7 +110,6 @@
   width: 100%;
   min-width: 1200px;
   height: 630px;
-  background-image: url("../../imgs/template-three/car.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -172,7 +168,6 @@
   width: 544px;
   margin-right: 12px;
   height: 573px;
-  background-image: url("../../imgs/template-three/car2.png");
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
@@ -212,7 +207,6 @@
 .advert-container .advert-title-R {
   width: 544px;
   height: 573px;
-  background-image: url("../../imgs/template-three/car.png");
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
@@ -382,7 +376,6 @@
   width: 100%;
   min-width: 1200px;
   height: 260px;
-  background-image: url("../../imgs/template-three/banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 100px;
@@ -408,6 +401,10 @@
   background: linear-gradient(270deg, #4a94eb 0%, #0474de 100%);
   border-radius: 25px;
   padding: 0 56px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   height: 50px;
   line-height: 50px;
 }
@@ -453,7 +450,6 @@
   width: 32px;
   height: 32px;
   display: inline-block;
-  background-image: url("../../imgs/template-three/call.png");
   background-size: cover;
   background-repeat: no-repeat;
   vertical-align: middle;
@@ -475,7 +471,6 @@
   width: 28px;
   height: 32px;
   display: inline-block;
-  background-image: url("../../imgs/template-three/Email.png");
   background-size: cover;
   background-repeat: no-repeat;
   vertical-align: middle;
@@ -487,6 +482,8 @@
   width: 80px;
   height: 80px;
   background-color: #D8D8D8;
+  background-size: cover;
+  background-repeat: no-repeat;
   margin-bottom: 4px;
 }
 
@@ -523,6 +520,10 @@
 .footer .Copyright .p {
   line-height: 18px;
   margin-bottom: 8px;
+}
+
+.footer .Copyright .p a {
+  color: #999999;
 }
 
 .footer .Copyright .span {

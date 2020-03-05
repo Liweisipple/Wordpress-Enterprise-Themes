@@ -154,24 +154,25 @@ if (!empty($wp_o_category)) {
 <?php
 $output = '';
 $cooperation_array = [
-    'tp5_cooperative_client_img_1',
-    'tp5_cooperative_client_img_2',
-    'tp5_cooperative_client_img_3',
-    'tp5_cooperative_client_img_4',
-    'tp5_cooperative_client_img_5',
-    'tp5_cooperative_client_img_6',
-    'tp5_cooperative_client_img_7',
-    'tp5_cooperative_client_img_8',
-    'tp5_cooperative_client_img_9',
-    'tp5_cooperative_client_img_10',
+    'tp5_cooperative_client_img_1' => 'tp5_cooperative_client_href1',
+    'tp5_cooperative_client_img_2' => 'tp5_cooperative_client_href2',
+    'tp5_cooperative_client_img_3' => 'tp5_cooperative_client_href3',
+    'tp5_cooperative_client_img_4' => 'tp5_cooperative_client_href4',
+    'tp5_cooperative_client_img_5' => 'tp5_cooperative_client_href5',
+    'tp5_cooperative_client_img_6' => 'tp5_cooperative_client_href6',
+    'tp5_cooperative_client_img_7' => 'tp5_cooperative_client_href7',
+    'tp5_cooperative_client_img_8' => 'tp5_cooperative_client_href8',
+    'tp5_cooperative_client_img_9' => 'tp5_cooperative_client_href9',
+    'tp5_cooperative_client_img_10' => 'tp5_cooperative_client_href10',
 ];
 $output .= '<section class="customer" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300">';
 $output .= '<h2>' . of_get_option('tp5_cooperative_client') . '<span>' . of_get_option('tp5_cooperative_client_other') . '</span></h2>';
 $output .= '<div class="content">';
-foreach ($cooperation_array as $val) {
-    $img = of_get_option($val);
+foreach ($cooperation_array as $key => $val) {
+    $img = of_get_option($key);
+    $href = of_get_option($val);
     if ($img == '') continue;
-    $output .= '<a href="">';
+    $output .= "<a href='$href'>";
     $output .= "<img src='{$img}' alt=''>";
     $output .= '</a>';
 }

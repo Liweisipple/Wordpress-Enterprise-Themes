@@ -1,4 +1,8 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/template-four/detail.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/style-editor.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/blocks.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/colors-dark.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/style.css">
 <?php $post = get_post($post_ID); ?>
 <?php $thumbnail_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post_ID), 'thumbnail'); ?>
 
@@ -31,9 +35,9 @@
     <div class="swiper-container one">
         <div class="swiper-wrapper">
             <?php
-                foreach ($img_arr as $val) {
-                    echo "<div class='swiper-slide'><img src='$val' alt=''></div>";
-                }
+//                foreach ($img_arr as $val) {
+//                    echo "<div class='swiper-slide'><img src='$val' alt=''></div>";
+//                }
             ?>
             <div class="swiper-slide"><img src="<?php echo $thumbnail_image_url[0] ?>" alt=""></div>
         </div>

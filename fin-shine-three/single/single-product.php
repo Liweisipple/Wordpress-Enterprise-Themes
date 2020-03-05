@@ -22,9 +22,6 @@
                 ?>
             </p>
 
-            <a href="javascript:;" class="more">
-                更多参数 >
-            </a>
         </div>
     </div>
 </section>
@@ -33,7 +30,7 @@
     <div class="layout content-box">
         <div class="content-top clearfix">
             <a href="javascript:;" class="a1 fl active">
-                <span>内容1</span>
+                <span>文章主要内容</span>
             </a>
         </div>
         <div class="clearfix content-centre">

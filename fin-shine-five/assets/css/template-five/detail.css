@@ -52,8 +52,8 @@
   display: -webkit-flex;
   /* Safari */
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -81,14 +81,14 @@
   outline: 0px solid #000;
 }
 
-.detail .info .content h3 {
+.detail .info .new-info h3 {
   font-size: 20px;
   font-weight: 500;
   color: #333333;
   margin-bottom: 30px;
 }
 
-.detail .info .content p {
+.detail .info .new-info p {
   width: 640px;
   line-height: 60px;
   font-size: 30px;
@@ -100,7 +100,7 @@
   background: #f7f7f7;
 }
 
-.detail .info .content span {
+.detail .info .new-info span {
   display: block;
   font-size: 14px;
   font-weight: 400;
@@ -108,7 +108,7 @@
   margin-bottom: 25px;
 }
 
-.detail .info .content div {
+.detail .info .new-info div {
   width: 160px;
   height: 42px;
   background: #083f7a;

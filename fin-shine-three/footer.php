@@ -26,7 +26,7 @@
             </p>
         </div>
         <a href="javascript:;" class="about-wx fr">
-            <i></i>
+            <i style="background-image: url(<?php echo of_get_option('temp3_infomation_wechat_logo'); ?>)"></i>
             <span class="wx">
                 <?php echo of_get_option('temp3_infomation_wechat'); ?>
             </span>
@@ -52,7 +52,7 @@
             $name = of_get_option($key);
             $href = of_get_option($val);
             if ($name == false) break;
-            $output .= $name. ' | ';
+            $output .= "<a href='$href'>" . $name. '</a>' . ' | ';
         }
         $output .= '</p>';
         echo $output;

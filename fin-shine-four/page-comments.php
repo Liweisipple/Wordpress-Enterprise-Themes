@@ -43,7 +43,7 @@ $output = '';
     <section class="message" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300">
         <div class="content">
             <?php
-                $url = get_template_directory_uri() . '/assets/imgs/template-four/message/header.png';
+                $url = get_template_directory_uri()  . '/assets/imgs/template-four/avatar.png';
                 $i = 1;
                 foreach ($p_array as $key => $val) {
                     $output = '';

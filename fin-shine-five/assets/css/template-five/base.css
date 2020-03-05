@@ -106,8 +106,8 @@ section {
   display: flex;
   border-bottom: 1px solid #fff;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .footer .brand div img {
@@ -134,9 +134,13 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: #999999;
+}
+
+.footer .us a {
+  color: #999;
 }
 
 .footer .us a:hover {
@@ -155,6 +159,8 @@ section {
 .top .img {
   height: 470px;
   text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .top .img h3 {
