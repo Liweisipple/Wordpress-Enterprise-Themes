@@ -72,7 +72,7 @@
         <video id="video" >
             <source src="https://img.php.cn/ueditor/php/upload/video/20190327/1553657855333112.mp4"  type="video/mp4">
         </video>
-        <div class="video-img abs-center"></div>
+        <div class="video-img abs-center" style="background: url(<?php echo get_template_directory_uri(); ?>/assets/imgs/template-three/play.png) no-repeat; background-size:cover;"></div>
         <p class="video-title pa z5">文案文案，文案文案</p>
     </div>
 </section>

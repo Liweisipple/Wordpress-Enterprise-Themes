@@ -95,20 +95,28 @@ section {
 
 .footer .center .left .content div {
   padding-top: 40px;
+  text-align: center;
   margin: 0;
-  width: 60px;
+  max-width: 100px;
 }
 
 .footer .center .left .content div h3 {
-  width: 42px;
   height: 20px;
   font-size: 14px;
   color: white;
+  max-width: 100px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
   line-height: 20px;
 }
 
 .footer .center .left .content div a {
   display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100px;
+  white-space: nowrap;
   margin: auto;
   color: #a4a5aa;
   font-size: 12px;
@@ -181,6 +189,8 @@ section {
 
 .top .img {
   height: 470px;
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
 }
 
@@ -201,32 +211,6 @@ section {
   text-shadow: 0 1px black, 1px 0 black, -1px 0 black, 0 -1px black;
 }
 
-.footer .center .left .content div h3 {
-  height: 20px;
-  font-size: 14px;
-  color: white;
-  max-width: 100px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  line-height: 20px;
-}
-
-footer .center .left .content div a {
-  display: block;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  max-width: 100px;
-  white-space: nowrap;
-  margin: auto;
-  color: #a4a5aa;
-  font-size: 12px;
-  line-height: 30px;
-}
-
-.footer .center .left .content div {
-  padding-top: 40px;
-  text-align: center;
-  margin: 0;
-  max-width: 100px;
+.footer .center .left .Copyright div a {
+  color: #999999;
 }

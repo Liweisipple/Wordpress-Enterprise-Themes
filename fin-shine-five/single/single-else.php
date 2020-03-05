@@ -1,4 +1,8 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/template-five/new.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/style-editor.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/blocks.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/colors-dark.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/style.css">
 <section class="info">
     <?php $post = get_post($post_ID);?>
     <div class="left">
@@ -7,7 +11,7 @@
         <p><?php echo substr($post->post_date, 10, 6)?></p>
     </div>
     <div class="mid">
-        <div class="top">
+        <div class="tp">
             <?php
             $res = get_the_category();
             $name = $res[0]->name;

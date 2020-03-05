@@ -1,4 +1,8 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/template-five/new.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/style-editor.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/blocks.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/colors-dark.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/style.css">
 <section class="info">
     <?php $post = get_post($post_ID);?>
     <div class="left">
@@ -7,7 +11,7 @@
         <p><?php echo substr($post->post_date, 10, 6)?></p>
     </div>
     <div class="mid">
-        <div class="top">
+        <div class="tp">
             <p class="tab"><a href="">新闻中心</a>>正文</p>
             <h3><?php echo $post->post_title; ?></h3>
         </div>
@@ -80,9 +84,9 @@
                         $thumbnail_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($val->ID), 'thumbnail');
                         $img = $thumbnail_image_url[0];
                         $output = '';
-                        $output .= "<a class='a' href='$post_recommend->guid'>";
+                        $output .= "<a class='a' href='$val->guid'>";
                         $output .= "<img src='$img' alt=''>";
-                        $output .= '<p>' . $post_recommend->post_title . '</p>';
+                        $output .= '<p>' . $val->post_title . '</p>';
                         $output .= '</a>';
                         echo $output;
                     }
