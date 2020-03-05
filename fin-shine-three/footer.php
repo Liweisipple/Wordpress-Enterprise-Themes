@@ -21,8 +21,8 @@
                 ?>
             </div>
             <p class="Contact">
-                <span class="call"><i></i><span class="num"><?php echo of_get_option('temp3_infomation_bo_telephone'); ?></span></span>
-                <span class="email"><i></i><span class="txt"><?php echo of_get_option('temp3_infomation_bo_weibo'); ?></span></span>
+                <span class="call"><i style="background-image: url(<?php echo of_get_option('temp3_infomation_bo_telephone_logo'); ?>)"></i><span class="num"><?php echo of_get_option('temp3_infomation_bo_telephone'); ?></span></span>
+                <span class="email"><i style="background-image: url(<?php echo of_get_option('temp3_infomation_bo_weibo_logo'); ?>)"></i><span class="txt"><?php echo of_get_option('temp3_infomation_bo_weibo'); ?></span></span>
             </p>
         </div>
         <a href="javascript:;" class="about-wx fr">
