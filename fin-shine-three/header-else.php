@@ -20,7 +20,7 @@
     <script src="<?php echo get_template_directory_uri(); ?>/assets/libs/swiper.min.js"></script>
 </head>
 <body>
-<section class="container">
+<section class="container" style="background-image: url(<?php echo of_get_option('tp3_top_back_img_'); ?>)">
     <section class="top-nav">
         <div class="layout clearfix">
             <a href="javascript:;" class="logo-wrap">

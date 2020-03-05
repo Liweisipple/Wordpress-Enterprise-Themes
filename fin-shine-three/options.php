@@ -37,6 +37,15 @@ function optionsframework_options() {
     );
 
     $options[] = array(
+        'name' => __( '模版3首页背景图设置', 'theme-textdomain' ),
+        'type' => 'heading'
+    );
+
+    $options[] = array(
+        'name' => __( '模版3首页背景图设置', 'theme-textdomain' ),        'desc' => __( '模版3首页背景图设置', 'theme-textdomain' ),        'id' => 'tp3_top_back_img_',        'std' => '',        'class' => '',        'placeholder' => '',        'type' => 'upload'
+    );
+
+    $options[] = array(
         'name' => __( '模版3首页顶部视频设置', 'theme-textdomain' ),
         'type' => 'heading'
     );
