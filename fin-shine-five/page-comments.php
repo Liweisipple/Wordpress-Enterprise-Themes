@@ -5,7 +5,7 @@
         <p class="tab"><a href="">联系我们</a>>留言板</p>
         <div class="content">
         <?php comments_template('/comments.php'); ?>
-            <?php if ( get_comments_number() > 1 && get_option( 'page_comments' ) ) :  ?>
+            <?php if (get_option( 'page_comments' ) ) :  ?>
                 <!-- 满足两个条件，评论个数大于一个且设置了分页数量 -->
                 <div class="page">
                     <div class="page">
