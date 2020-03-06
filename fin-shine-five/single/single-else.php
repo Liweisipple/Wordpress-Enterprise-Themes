@@ -87,9 +87,9 @@
                     $thumbnail_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($val->ID), 'thumbnail');
                     $img = $thumbnail_image_url[0];
                     $output = '';
-                    $output .= "<a class='a' href='$post_recommend->guid'>";
+                    $output .= "<a class='a' href='$val->guid'>";
                     $output .= "<img src='$img' alt=''>";
-                    $output .= '<p>' . $post_recommend->post_title . '</p>';
+                    $output .= '<p>' . $val->post_title . '</p>';
                     $output .= '</a>';
                     echo $output;
                 }

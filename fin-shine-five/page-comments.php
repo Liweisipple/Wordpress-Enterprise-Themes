@@ -21,8 +21,8 @@
                 $comment_form_args = array(
                     'fields'  => apply_filters( 'comment_form_default_fields', array(
                             // 作者名称字段
-                            'author' => '<div><span class="text">昵称：</span><input id="author" name="author" type="text" value=""></div>',
-                            'content' => '<div><span class="text">留言内容：</span><input id="comment" name="comment" type="text" value=""><span class="btn" id="submit_message"><input style="width:79px;height:34px;background:#559aee;color: #fff;
+                            'author' => '<div><span class="text">昵称</span><input id="author" name="author" type="text" value=""></div>',
+                            'content' => '<div><span class="text">留言内容</span><input id="comment" name="comment" type="text" value=""><span class="btn" id="submit_message"><input style="width:79px;height:34px;background:#559aee;color: #fff;
 ;margin: 0 0 0 0;" name="submit" type="submit" id="submit" class="submit" value="发布"></span></div>')
                     ),
                     'comment_field' => '',
@@ -33,7 +33,7 @@
 
                 );
                 if (is_user_logged_in()) {
-                    $comment_form_args['comment_field'] = '<div><span class="text">留言内容：</span><input id="comment" name="comment" cols="45" rows="5" class="span8" aria-required="true"><span class="btn" id="submit_message"><input style="width:79px;height:34px;background:#559aee;color: #fff;
+                    $comment_form_args['comment_field'] = '<div><span class="text">留言内容</span><input id="comment" name="comment" cols="45" rows="5" class="span8" aria-required="true"><span class="btn" id="submit_message"><input style="width:79px;height:34px;background:#559aee;color: #fff;
 ;margin: 0 0 0 0;" name="submit" type="submit" id="submit" class="submit" value="发布"></span></div>';
                 }
                 ?>
