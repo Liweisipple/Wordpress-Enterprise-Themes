@@ -26,6 +26,7 @@ $news_cate = get_category_by_slug('news');//获取商品详情
 if ($product_detail_cate) { //商品详情
     $p_array = getchild($product_detail_cate->term_id);
     $p_array[] = $product_detail_cate->term_id;
+    $p_s_array = $p_array;
     $p_array = implode(',', $p_array);
     if ($category_slug == 'allclassification' || $category_slug == 'productdetails') {
         //查询产品
@@ -47,6 +48,7 @@ if ($product_detail_cate) { //商品详情
 if ($news_cate) { //新闻
     $s_array = getchild($news_cate->term_id);
     $s_array[] = $news_cate->term_id;
+    $s_s_array = $s_array;
     $s_array = implode(',', $s_array);
     if ($category_slug == 'allclassification' || $category_slug == 'news') {
         //查询新闻
@@ -70,16 +72,30 @@ if ($category_slug != 'news' && $category_slug != 'productdetails') {
     $term_id = get_current_category_id();
     $o_array = getchild($term_id);
     $o_array[] = $term_id;
+    foreach ($o_array as $key => $val) {
+        foreach ($p_s_array as $key2 => $val2) {
+            if ($val == $val2) {
+                unset($p_s_array[$key2]);
+            }
+        }
+        foreach ($s_s_array as $key3 => $val3) {
+            if ($val == $val3) {
+                unset($s_s_array[$key3]);
+            }
+        }
+    }
     $o_array = implode(',', $o_array);
+    $p_s_array = implode(',', $p_s_array);
+    $s_s_array = implode(',', $s_s_array);
 
     $request_o = "SELECT $wpdb->terms.term_id, name, slug FROM $wpdb->terms ";
     $request_o .= " LEFT JOIN $wpdb->term_taxonomy ON $wpdb->term_taxonomy.term_id = $wpdb->terms.term_id  ";
     $request_o .= " WHERE  $wpdb->term_taxonomy.taxonomy = 'category' AND $wpdb->term_taxonomy.count != 0 ";
     if ($p_array != '') {
-        $request_o .= " AND ($wpdb->term_taxonomy.parent not in ($p_array) AND $wpdb->term_taxonomy.term_id not in ($p_array))";
+        $request_o .= " AND ( $wpdb->term_taxonomy.term_id not in ($p_s_array))";
     }
     if ($s_array != '') {
-        $request_o .= " AND ($wpdb->term_taxonomy.parent not in ($s_array) AND $wpdb->term_taxonomy.term_id not in ($s_array))";
+        $request_o .= " AND ( $wpdb->term_taxonomy.term_id not in ($s_s_array))";
     }
 
     $request_o .= " AND $wpdb->term_taxonomy.term_id in ($o_array)";
