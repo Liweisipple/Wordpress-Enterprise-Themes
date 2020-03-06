@@ -65,8 +65,8 @@ $output = '';
             $comment_form_args = array(
                 'fields'  => apply_filters( 'comment_form_default_fields', array(
                         // 作者名称字段
-                        'author' => '<div class="clearfix"><label class="text">昵称：</label><input id="author" name="author" type="text" value="" placeholder="请输入昵称"></div>',
-                        'content' => '<div class="clearfix" style="margin-top:20px"><label class="text">留言内容：</label><textarea id="comment" name="comment" type="text" value="" placeholder="请输入留言内容"></textarea><button id="submit_message"><input style="border:none;background-color:#353235;color: #fff;
+                        'author' => '<div class="clearfix"><label class="text">昵称</label><input id="author" name="author" type="text" value="" placeholder="请输入昵称"></div>',
+                        'content' => '<div class="clearfix" style="margin-top:20px"><label class="text">留言内容</label><textarea id="comment" name="comment" type="text" value="" placeholder="请输入留言内容"></textarea><button id="submit_message"><input style="border:none;background-color:#353235;color: #fff;
             ;margin: 0 0 0 0;" type="submit" id="submit" value="留言" ></button></div>')
                 ),
                 'comment_field' => '',
@@ -77,7 +77,7 @@ $output = '';
 
             );
             if (is_user_logged_in()) {
-                $comment_form_args['comment_field'] = '<div class="clearfix"><label class="text">留言内容：</label><textarea id="comment" name="comment" type="text" value="" placeholder="请输入留言内容"></textarea><button id="submit_message"><input style="border:none;background-color:#353235;color: #fff;
+                $comment_form_args['comment_field'] = '<div class="clearfix"><label class="text">留言内容</label><textarea id="comment" name="comment" type="text" value="" placeholder="请输入留言内容"></textarea><button id="submit_message"><input style="border:none;background-color:#353235;color: #fff;
             ;margin: 0 0 0 0;" type="submit" id="submit" value="留言"></button></div>';
             }
             ?>
