@@ -51,7 +51,7 @@
             <?php
                 $cate_id = $category->term_id;
                 $request = "SELECT object_id FROM $wpdb->term_relationships ";
-                $request .= " WHERE $wpdb->term_relationships.term_taxonomy_id = $cate_id";
+                $request .= " WHERE $wpdb->term_relationships.term_taxonomy_id = $cate_id AND $wpdb->term_relationships.object_id != $post_ID";
                 $posts_right = $wpdb->get_results($request);
                 foreach ($posts_right as $key => $val) {
                     $post_recommend_id = $val->object_id;
