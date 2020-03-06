@@ -906,17 +906,17 @@ function comment_form_div( $args = array(), $post_id = null ) {
     if ( has_action( 'set_comment_cookies', 'wp_set_comment_cookies' ) && get_option( 'show_comments_cookies_opt_in' ) ) {
         $consent = empty( $commenter['comment_author_email'] ) ? '' : ' checked="checked"';
 
-        $fields['cookies'] = sprintf(
-            '<p class="comment-form-cookies-consent">%s %s</p>',
-            sprintf(
-                '<input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"%s />',
-                $consent
-            ),
-            sprintf(
-                '<label for="wp-comment-cookies-consent">%s</label>',
-                __( 'Save my name, email, and website in this browser for the next time I comment.' )
-            )
-        );
+//        $fields['cookies'] = sprintf(
+//            '<p class="comment-form-cookies-consent">%s %s</p>',
+//            sprintf(
+//                '<input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"%s />',
+//                $consent
+//            )
+////            sprintf(
+////                '<label for="wp-comment-cookies-consent">%s</label>',
+////                __( 'Save my name, email, and website in this browser for the next time I comment.' )
+////            )
+//        );
 
         // Ensure that the passed fields include cookies consent.
         if ( isset( $args['fields'] ) && ! isset( $args['fields']['cookies'] ) ) {
