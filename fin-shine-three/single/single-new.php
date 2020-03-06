@@ -15,7 +15,7 @@
                 <span class="data"><?php echo $post->post_date ?></span>
 <!--                <span>13：00</span>-->
             </div>
-            <div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300">
+            <div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300" class="new-info aos-init aos-animate">
                 <p class="words"><?php echo $post->post_content; ?> </p>
                 <div class="navs">
                     <?php
