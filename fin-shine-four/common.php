@@ -23,7 +23,7 @@ if (!empty($wp_category)) {
                 $thumbnail_image_url = empty($thumbnail_image_url) ? '' : $thumbnail_image_url[0];
                 $output .= "<a href='{$val_p->guid}'>";
                 $output .= "<img src = {$thumbnail_image_url}>";
-                $output .= "<h3>$val_p->post_title</h3>";
+                $output .= "<h3>" . mb_substr($val_p->post_title, 0, 6) . "</h3>";
                 $output .= "<p>" . mb_substr($val_p->post_excerpt, 0, 28, 'utf-8') . "</p>";
                 $output .= '</a>';
             }
