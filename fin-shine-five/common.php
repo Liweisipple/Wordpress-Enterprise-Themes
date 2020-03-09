@@ -50,7 +50,11 @@ if (!empty($wp_category)) {
             foreach ($posts as $key_p => $val_p) {
                 $thumbnail_image_url = wp_get_attachment_image_src(get_post_thumbnail_id($val_p->ID), 'thumbnail');
                 $thumbnail_image_url = empty($thumbnail_image_url) ? '' : $thumbnail_image_url[0];
-                if ($i == 0 || $i == 4) {
+                if ($i == 4 || $i == 8) {
+                    $output .= '</div>';
+                    $output .= '<div>';
+                }
+                if ($i == 0) {
                     $output .= '<div>';
                 }
                 $output .= "<a href='{$val_p->guid}'>";
@@ -58,9 +62,9 @@ if (!empty($wp_category)) {
                 $output .= "<h3>$val_p->post_title</h3>";
                 $output .= "<span href='{$val_p->guid}'>查看详情</span>";
                 $output .= '</a>';
-                if ($i == 4 || $i == 8) {
-                    $output .= '</div>';
-                }
+//                if ($i == 4 || $i == 8) {
+//                    $output .= '</div>';
+//                }
                 $i++;
             }
             $output .= '</div>';
