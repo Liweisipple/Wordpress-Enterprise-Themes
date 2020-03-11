@@ -34,6 +34,7 @@
         ?>
     </div>
     <div class="us">
+        <div class="layout">
         <?php
         $output = '';
         $cooperation_array = [
@@ -53,6 +54,7 @@
         }
         echo $output;
         ?>
+        </div>
     </div>
     <?php
     $output = '';

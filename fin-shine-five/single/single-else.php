@@ -1,8 +1,5 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/template-five/new.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/style-editor.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/blocks.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/colors-dark.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/style.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/common/style-editor.css">
 <section class="info">
     <?php $post = get_post($post_ID);?>
     <div class="left">
@@ -17,9 +14,10 @@
             $name = $res[0]->name;
             ?>
             <p class="tab"><a href=""><?php echo $name; ?></a>>正文</p>
-            <h3><?php echo $post->post_title; ?></h3>
+
+            <h3 class="title"><?php echo $post->post_title; ?></h3>
         </div>
-        <div class="new-info">
+        <div class="editor-content news-content">
             <?php echo $post->post_content; ?>
         </div>
         <div class="related">

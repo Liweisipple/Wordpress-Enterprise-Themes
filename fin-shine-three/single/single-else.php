@@ -1,7 +1,4 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/template-three/template-three-news/index.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/style-editor.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/blocks.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/colors-dark.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/style.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/template-three/template-three-news/base.css">
 

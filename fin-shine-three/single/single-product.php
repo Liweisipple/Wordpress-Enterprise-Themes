@@ -1,8 +1,5 @@
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/template-three/template-three-detail/index.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/style-editor.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/blocks.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/colors-dark.css">
-<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/libs/style.css">
+<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/common/style-editor.css">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/template-three/template-three-detail/detail.css">
 <?php $post = get_post($post_ID); ?>
 <?php $thumbnail_image_url = wp_get_attachment_image_src( get_post_thumbnail_id($post_ID), 'thumbnail'); ?>
@@ -14,16 +11,16 @@
         </div>
         <div class="configure-R fl">
             <h3 class="title single-line"><?php echo $post->post_title; ?></h3>
-                <?php
-                    if(get_the_tag_list()) {
-                        $tag_arr = get_the_tag_list_div();
-                        foreach ($tag_arr as $val) {
-                            echo '<p class="info single-line">';
-                            echo '<span>' . $val . '</span>';
-                            echo '</p>';
-                        }
-                    }
-                ?>
+            <?php
+            if(get_the_tag_list()) {
+                $tag_arr = get_the_tag_list_div();
+                foreach ($tag_arr as $val) {
+                    echo '<p class="info single-line">';
+                    echo '<span>' . $val . '</span>';
+                    echo '</p>';
+                }
+            }
+            ?>
             </p>
 
         </div>
@@ -37,7 +34,7 @@
                 <span>文章主要内容</span>
             </a>
         </div>
-        <div class="clearfix content-centre">
+        <div class="clearfix content-centre editor-content">
             <div class="content-L fl">
                 <?php echo $post->post_content; ?>
             </div>

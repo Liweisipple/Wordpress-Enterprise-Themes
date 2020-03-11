@@ -73,3 +73,8 @@ a:hover {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
+
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}

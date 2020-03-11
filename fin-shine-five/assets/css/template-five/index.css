@@ -25,21 +25,23 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .hot .content div {
+  width: 20%;
   height: 320px;
   border-radius: 1px;
   border: 1px solid #e5e5e5;
+  margin-right: -1px;
 }
 
 .hot .content div:hover {
   border: 1px solid #d3082f;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  position: relative;
+  z-index: 3;
 }
 
 .hot .content div:hover .btn {
@@ -47,6 +49,10 @@
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
   color: #d3082f;
+  -webkit-transition: -webkit-transform .5s ease-out;
+  transition: -webkit-transform .5s ease-out;
+  transition: transform .5s ease-out;
+  transition: transform .5s ease-out, -webkit-transform .5s ease-out;
 }
 
 .hot .content div img {
@@ -54,6 +60,7 @@
   height: 170px;
   padding-top: 10px;
   padding-bottom: 10px;
+  transition: transform .5s ease-out,-webkit-transform .5s ease-out;
 }
 
 .hot .content div h3 {
@@ -65,6 +72,9 @@
   font-weight: 500;
   color: #333333;
   line-height: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .hot .content div p {
@@ -132,9 +142,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .car .content .right div:last-child {
@@ -187,14 +197,18 @@
 }
 
 .car .content .right div a h3 {
+  width: 90%;
   padding-left: 10px;
   text-align: left;
-  width: 196px;
   height: 36px;
   font-size: 14px;
   font-weight: 500;
   color: #333333;
   line-height: 18px;
+  line-height: 18px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .car .content .right div a p {
@@ -231,11 +245,15 @@
 }
 
 .image h3 {
+  width: 80%;
   padding-left: 100px;
   padding-top: 70px;
   height: 67px;
   font-size: 48px;
   line-height: 58px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .image p {
@@ -244,6 +262,11 @@
   height: 74px;
   font-size: 24px;
   line-height: 37px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .new {
@@ -365,9 +388,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -376,9 +399,14 @@
   display: block;
   float: left;
   margin-bottom: 15px;
-  width: 205px;
+  width: 202px;
   height: 120px;
   border: 1px solid #e5e5e5;
+  margin-right: 20px;
+}
+
+.customer .content a:nth-child(5) {
+  margin-right: 0;
 }
 
 .customer .content a:hover {
@@ -390,41 +418,4 @@
 .customer .content a img {
   width: 100%;
   height: 100%;
-}
-
-.footer {
-  height: 230px;
-  background: #2f3545;
-  width: 100%;
-}
-
-.footer .pledge {
-  width: 1100px;
-  margin: auto;
-  border-bottom: 1px;
-  opacity: 0.1;
-}
-
-.footer .pledge div {
-  width: 140px;
-  padding-top: 40px;
-  height: 40px;
-}
-
-.footer .pledge div img {
-  float: left;
-  width: 40px;
-  height: 40px;
-}
-
-.footer .pledge div h3 {
-  vertical-align: middle;
-  float: left;
-  padding-left: 10px;
-  text-align: left;
-  height: 36px;
-  font-size: 14px;
-  font-weight: 500;
-  color: white;
-  line-height: 18px;
 }

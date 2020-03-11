@@ -405,7 +405,7 @@ if ( ! function_exists( 'fenikso_comment' ) ) :
                             <img src="<?php echo get_template_directory_uri()  . '/assets/imgs/template-five/avatar.png'; ?>" alt="">
                             <div>
                                 <h3><?php printf( '%1$s %2$s', get_comment_author_link(), ( $comment->user_id === $post->post_author ) ? '<span class="label label-info"></span>' : ''); ?></h3>
-                                <p>身份信息</p>
+<!--                                <p>身份信息</p>-->
                             </div>
 
                         </div>
@@ -1024,3 +1024,11 @@ function get_current_category_id() {
     $current_category = single_cat_title('', false);//获得当前分类目录名称
     return get_cat_ID($current_category);//获得当前分类目录 ID
 }
+
+
+function remove_submenu() {
+    remove_submenu_page( 'themes.php', 'themes.php' );
+    remove_submenu_page( 'themes.php', 'customize.php?return=%2Fwp-admin%2Fthemes.php' );
+}
+
+add_action('admin_init','remove_submenu');

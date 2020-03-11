@@ -170,7 +170,7 @@ $cooperation_array = [
     'tp5_cooperative_client_img_10' => 'tp5_cooperative_client_href10',
 ];
 $output .= '<section class="customer" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300">';
-$output .= '<h2>' . of_get_option('tp5_cooperative_client') . '<span>' . of_get_option('tp5_cooperative_client_other') . '</span></h2>';
+$output .= '<h2>' . of_get_option('tp5_cooperative_client') . '<span>' . '&nbsp;' .of_get_option('tp5_cooperative_client_other') . '</span></h2>';
 $output .= '<div class="content">';
 foreach ($cooperation_array as $key => $val) {
     $img = of_get_option($key);

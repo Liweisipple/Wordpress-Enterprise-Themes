@@ -25,7 +25,7 @@
 <section class="top-nav">
     <div class="layout clearfix">
         <a href="javascript:;" class="logo-wrap">
-            <span class="logo" style="background-image: url(<?php echo of_get_option('tp5_top_logo_img_url'); ?>)"></span>
+            <img class="logo" src="<?php echo of_get_option('tp5_top_logo_img_url'); ?>">
         </a>
         <div class="main-navs">
             <?php
@@ -53,7 +53,9 @@
                         $echo = "<a class = 'navs-item'" . $val;
                         $content = get_between($echo, '/">', '</a>');
                         $left = '<a' . get_between($echo, '<a', '/">') . '/">';
-                        echo $left . '<img src=' . get_template_directory_uri() . '/assets/imgs/template-five/img3.png" alt="">' . $content . '</a>' ;
+//                        echo $left . '<img src=' . get_template_directory_uri() . '/assets/imgs/template-five/img3.png" alt="">' . $content . '</a>' ;
+
+                        echo $left . '<img src=' . get_template_directory_uri() . '/assets/imgs/icon-menu-default.png alt="" class="default-img">' . '<img src=' . get_template_directory_uri() . '/assets/imgs/icon-menu-active.png alt="" class="active-img">' . $content . '</a>' ;
                     } else {
                         echo '<a class = "navs-item"' . $val;
                     }

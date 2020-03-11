@@ -25,7 +25,6 @@
 
 .detail .info .img .gallery-top img {
   width: 400px;
-  height: 400px;
 }
 
 .detail .info .img .gallery-thumbs {
@@ -81,6 +80,10 @@
   outline: 0px solid #000;
 }
 
+.detail .info .new-info {
+  width: 60%;
+}
+
 .detail .info .new-info h3 {
   font-size: 20px;
   font-weight: 500;
@@ -88,8 +91,10 @@
   margin-bottom: 30px;
 }
 
-.detail .info .new-info p {
-  width: 640px;
+.detail .info .new-info p.label {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
   line-height: 60px;
   font-size: 30px;
   margin-bottom: 20px;
@@ -100,7 +105,7 @@
   background: #f7f7f7;
 }
 
-.detail .info .new-info span {
+.detail .info .new-info span.sub-label {
   display: block;
   font-size: 14px;
   font-weight: 400;
@@ -108,14 +113,14 @@
   margin-bottom: 25px;
 }
 
-.detail .info .new-info div {
-  width: 160px;
-  height: 42px;
+.detail .info .new-info div.phone-wrap {
+  display: inline-block;
+  padding: 12px 52px;
+  line-height: 18px;
   background: #083f7a;
   border-radius: 21px;
   font-size: 14px;
   text-align: center;
-  line-height: 42px;
   font-weight: 400;
   color: white;
 }

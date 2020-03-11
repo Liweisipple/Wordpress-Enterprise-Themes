@@ -105,6 +105,10 @@
   position: absolute;
 }
 
+.pfixed {
+  position: fixed;
+}
+
 .abs-right {
   position: absolute;
   right: 0;

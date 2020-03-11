@@ -54,7 +54,7 @@ $output = '';
                     $output .= "<img src='$url'>";
                     $output .= '<div>';
                     $output .= '<h3>' . $val['name'] . '</h3>';
-                    $output .= '<p>' . 身份信息 . '</p>';
+//                    $output .= '<p>' .  . '</p>';
                     $output .= '</div>';
                     $output .= '</div>';
                     $output .= '</div>';
