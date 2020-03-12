@@ -1026,9 +1026,9 @@ function get_current_category_id() {
 }
 
 
-function remove_submenu() {
-    remove_submenu_page( 'themes.php', 'themes.php' );
-    remove_submenu_page( 'themes.php', 'customize.php?return=%2Fwp-admin%2Fthemes.php' );
-}
-
-add_action('admin_init','remove_submenu');
+//function remove_submenu() {
+//    remove_submenu_page( 'themes.php', 'themes.php' );
+//    remove_submenu_page( 'themes.php', 'customize.php?return=%2Fwp-admin%2Fthemes.php' );
+//}
+//
+//add_action('admin_init','remove_submenu');
